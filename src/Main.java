@@ -1,5 +1,8 @@
 
 import loops.loops;
+import person.Person;
+import person.Student;
+import person.Teacher;
 
 
 
@@ -72,14 +75,43 @@ public class Main {
 
    
      
-     loops testLoops = new loops();
-     testLoops.testDoWhileLoop();
+//     loops testLoops = new loops();
+//     testLoops.testDoWhileLoop();
+//     
+//     loops.testDoWhileLoop();
+//     loops.testForLoops();
+//     
+//     
+//     loops.testDoubleForLoops();
+//     loops.testMultipicationTable();
+//     
      
-     loops.testDoWhileLoop();
-     loops.testForLoops();
+     Person p1 = new Person();
+     p1.showData();
+     p1.setName("Marko");
+     p1.setSurname("Markovic");
+     p1.setJmbg("1234568978");
+     p1.showData();
+     
+     Person p2 = new Person("Petar", "Petrovic", "78945612312");
+     p2.showData();
      
      
-     loops.testDoubleForLoops();
-     loops.testMultipicationTable();
- }
+     Student studentJovan = new Student("Jovan", "JOvanovic", "258963");
+     studentJovan.setCurrentYear(4);
+     studentJovan.setIndexNumber("4");
+     studentJovan.showData();
+     
+     Student studentMarija = new Student("Marija", "Maric", "789456369", "oas-123", 2);
+     studentMarija.showData();
+             
+     Teacher t1 = new Teacher();
+     t1.showData();
+    t1.setName("Milan");
+    t1.setSurname("Milanovic");
+    t1.setJmbg("77889945");
+    t1.showData();
+    
+  
    } 
+}
